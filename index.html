@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Details</title>
+  </head>
+  <body>
+    <div>    
+      <input id="Password" placeholder="Password" type="password">
+    </div>
+    <div>    
+      <input id="videoName" placeholder="Video Name">
+    </div>
+    <div>
+      <!--input type="file" id="fileUpload"-->
+      <label for="liveStart">Live Start</label>
+      <input id="liveStart" type="time">
+    </div>
+    <ul id="myUL">
+      <li ><span class="caret">Tags</span>
+        <ul class="nested" id="tagGroupList">
+          <li class="tagGroup"><span class="caret">teams</span>
+            <ul class="nested">
+              <li class="tag"><input class="tagInput"></li>
+              <li class="tag"><input class="tagInput"></li>
+            </ul>
+          </li>
+          <li class="tagGroup"><span class="caret">sport</span>
+            <ul class="nested">
+              <li class="tag"><input class="tagInput"></li>
+            </ul>
+          </li>
+    
+          
+        </ul>
+      </li>
+    </ul>
+    <input id="youtubeLink" placeholder="youtube link">
+   
+    <div>
+      <button id="button">Submit</button>
+      <button id="clear">Clear Live Videos</button>
+    </div>
+    <script type="module" src="bundle.js"></script>
+    <script type="module" src="webstieLogic.js"></script>
+   
+    <p id ="test">test</p>
+  </body>
+</html>
